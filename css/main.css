@@ -1,0 +1,316 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.block {
+	padding: 1rem;
+	text-align: center;
+	height: 100%;
+}
+section {
+	padding-top: 1rem;
+	margin-bottom: 0.1rem;
+	margin-top: 5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+h2, h3, h4, h5, h6 {
+	color: #979797;
+}
+h2 {
+	font-size: 3.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: right;
+}
+h3 {
+	font-size: 2.5rem;
+	text-align: left;
+}
+h4 {
+	font-size: 1.5rem;
+	margin-bottom: 0.7rem;
+}
+a {
+	text-decoration: none;
+	color: #747374;
+}
+p {
+	margin: 0;
+	color: #828181;
+}
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.ColoredText_Sub {
+	color: pink;
+}
+/*header menu: ____________________________________*/
+.HeaderMenu {
+	min-height: 6rem;
+}
+.HeaderNavigation {
+	display: flex;
+	justify-content: center;
+}
+.HeaderNavigation li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 1rem;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+}
+.HeaderNavigation a:hover {
+	background: pink;
+	color: #fff;
+}
+.HeaderPhone {
+	font-size: 17px;
+	text-decoration: none;
+	margin-left: auto;
+	letter-spacing: 0.1em;
+	background: #fff;
+	color: pink;
+	transition: all 0.5s ease;
+}
+.HeaderPhone:hover {
+	background: pink;
+	color: #fff;
+}
+/*header offer: ____________________________________*/
+.HeaderOffer {
+	min-height: 6rem;
+	text-transform: uppercase;
+	padding: 0 0 24rem 0;
+	margin-bottom: 0.1rem;
+	color: pink;
+	background: url('../img/header.jpg') no-repeat center top / cover;
+	background-color: rgba(213, 227, 239, 0.2);
+	background-blend-mode: hard-light;
+}
+.HeaderOffer p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+.HeaderOffer h1 {
+	font-size: 100px;
+	margin-bottom: 1rem;
+	margin-top: -1rem;
+	letter-spacing: 0.01em;
+}
+.HeaderOffer h3 {
+	color: pink;
+	font-size: 2rem;
+}
+.OpenPetCatalogBT {
+	display: block;
+	font-size: 1rem;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	padding: 0.1rem 1rem;
+	border: 1px solid #ccc;
+	width: 15rem;
+	transition: all 0.5s ease;
+	border-radius: 0.2rem;
+}
+.OpenPetCatalogBT:hover {
+	cursor: pointer;
+	background: pink;
+	color: #fff;
+}
+.OpenPetCatalogBT:active {
+	background-color: #fff;
+	color: #747374;
+}
+/*WhyChooseUs_Section: ____________________________________*/
+.WhyChooseUs {
+	background-color: #fff;
+}
+.WhyChooseUs .block {
+	display: flex;
+}
+.WhyChooseUsGroup {
+	display: block;
+	color: #747374;
+	text-align: left;
+	padding-left: 1rem;
+}
+/*PetCatalog_Section: ____________________________________*/
+.PetCatalogSection {
+	height: 39rem;
+}
+
+.PetCatalog img{
+	height: 38%;
+}
+.PetInfoGroup h4 {
+	margin-top: 1rem;
+}
+.PriceInfoGroup {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.1rem;
+}
+.PriceInfoGroup p {
+	font-size: 16px;
+	font-weight: 700;
+	color: #747374;
+}
+.PetPrice_Sub {
+	font-size: 20px;
+	font-weight: 700;
+	color: #747374;
+}
+.AddToCartBT {
+	display: block;
+	padding: 0;
+	border: none;
+	width: 42px;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+}
+.AddToCartBT:hover {
+	cursor: pointer;
+}
+/*About_Section: ____________________________________*/
+.AboutSection p {
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.92em;
+}
+/*Gallery_Section: ____________________________________*/
+.GallerySection figure {
+	display: flex;
+	justify-content: center;
+}
+.GalleryGroup .block {
+	padding: 0 0;
+	display: flex;
+	justify-content: space-around;
+	cursor: pointer;
+	height: 90px;
+}
+/*Feedback_Section: ____________________________________*/
+.FeedbackGroup {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
+	padding-right: 70px;
+	padding-bottom: 250px;
+	background: url('../img/feedback.jpg') no-repeat center top / cover;
+	clip-path: polygon(0 30%, 0 15%, 100% 0, 100% 85%, 0 100%, 0 100%, 0 82%, 0% 43%, 0 9%);
+	height: 39rem;
+}
+.Feedback_1 {
+	width: 180px;
+	height: 145px;
+}
+.Feedback_1 p {
+	color: #525252;
+	font-size: 16px;
+	width: 200px;
+	padding: 5px;
+	text-align: justify;
+	margin-bottom: 1rem;
+}
+.FeedbackTextInputGroup {
+	margin: 5px;
+}
+.FeedbackTextInputGroup input {
+	width: 200px;
+	height: 20px;
+	color: #323232;
+	background-color: #fff;
+	border: 1px solid #ccc
+}
+.FeedbackTextInputGroup textarea {
+	width: 200px;
+	height: 150px;
+	color: #323232;
+	background-color: #fff;
+	border: 1px solid #ccc
+}
+.FeedbackBT {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 0 17px;
+	border: 1px solid grey;
+	width: 200px;
+	transition: all 0.5s ease;
+	border-radius: 4px;
+	margin: 10px;
+	background: #fff;
+	color: #525252;
+}
+.FeedbackBT:hover {
+	cursor: pointer;
+	background: pink;
+	color: #fff;
+}
+/*footer: ____________________________________*/
+footer {
+	font-size: 15px;
+	display: flex;
+	padding-top: 58px;
+}
+footer p {
+	text-align: left;
+	padding-left: 30px;
+}
+/*HOME button: ____________________________________*/
+#HomeBT {
+	position: fixed;
+	display: inline-block;
+	bottom: 20px;
+	right: 20px;
+	width: 4.5rem;
+	height: 4rem;
+	border-radius: 0.2rem;
+	border: 1px solid #ccc;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 3.5rem;
+	text-align: center;
+	animation: blink 10s infinite;
+	-webkit-animation: blink 10s infinite;
+	color: #fff;
+	transition: all 0.5s ease;
+	padding-left: 0.1rem;
+}
+#HomeBT:hover {
+	cursor: pointer;
+	background-color: #fff;
+	animation: paused;
+	color: #747374;
+}
+#HomeBT:active {
+	background-color: pink;
+	color: #fff;
+}
+/*HOME button animation: */
+@keyframes blink {
+	0% {background-color: #fdc0ca;}
+	33% {background-color: #fc97a8;}
+	66% {background-color: #ffaaba;}
+	100% {background-color: #fdc0ca;}
+}
+@-webkit-keyframes blink {
+	0% {background-color: #fdc0ca;}
+	33% {background-color: #fc97a8;}
+	66% {background-color: #ffaaba;}
+	100% {background-color: #fdc0ca	;}
+}
