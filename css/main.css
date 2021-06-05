@@ -148,7 +148,6 @@ ul, li {
 .PetCatalogSection {
 	height: 39rem;
 }
-
 .PetCatalog img{
 	height: 38%;
 }
@@ -159,7 +158,6 @@ ul, li {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 0.1rem;
 }
 .PriceInfoGroup p {
 	font-size: 16px;
@@ -200,6 +198,47 @@ ul, li {
 	justify-content: space-around;
 	cursor: pointer;
 	height: 90px;
+}
+/*Subscription_Section: ____________________________________*/
+.SubscriptionSection {
+	background-color: #acacac;
+	padding: 0.5rem;
+}
+.SubscriptionGroup p, h4{
+	color: #ffffff;
+	text-align: center;
+}
+.SubscriptionForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+.SubscriptionForm input {
+	width: 200px;
+	height: 26px;
+	color: #323232;
+	background-color: #fff;
+	border: 1px solid #ccc
+}
+.SubscriptionBT {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 0 17px;
+	border: 1px solid grey;
+	width: 200px;
+	transition: all 0.5s ease;
+	border-radius: 4px;
+	margin: 10px;
+	background: #fff;
+	color: #525252;
+}
+.SubscriptionBT:hover {
+	cursor: pointer;
+	background: pink;
+	color: #fff;
 }
 /*Feedback_Section: ____________________________________*/
 .FeedbackGroup {
@@ -281,6 +320,7 @@ footer p {
 	height: 4rem;
 	border-radius: 0.2rem;
 	border: 1px solid #ccc;
+
 	font-size: 1.2rem;
 	letter-spacing: 0.1rem;
 	line-height: 3.5rem;
