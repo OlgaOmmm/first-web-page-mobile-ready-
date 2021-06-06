@@ -206,14 +206,14 @@
 </div>
 
 <div class="container">
-    <section class="SubscriptionSection">
+    <section id="SubscriptionSection" class="SubscriptionSection">
         <div class="SubscriptionGroup">
             <h4>Keep up-to-date with the latest updates</h4>
             <p>Subscribe to our newsletter to get a weekly dose of <span class="ColoredText_Sub">DOG&amp;CAT</span> news, delivered straight to your inbox</p>
         </div>
-        <form id="SubscriptionForm" class="SubscriptionForm">
-            <input id="SubscriptionEmail" type="text" placeholder="Email Address" required>
-            <a href="#" id="SubscriptionBT" class="SubscriptionBT">SUBSCRIBE</a>
+        <form action="cfm/subscribtionSuccessful.cfm" method="post" id="SubscriptionForm" class="SubscriptionForm">
+            <input id="SubscriptionEmail" name="SubscriptionEmail" type="email" placeholder="Enter Email Address" minlength="5" maxlength="45" required>
+            <a href="#SubscriptionSection" type="submit" id="SubscriptionBT" class="SubscriptionBT">SUBSCRIBE</a>
         </form>
     </section>
 </div>
@@ -224,18 +224,17 @@
         <div class="FeedbackGroup">
             <div class="Feedback_1">
                 <p>Please leave your message here and we will contact you:</p>
-                <form id="FeedbackForm" class="FeedbackForm">
+                <form action="cfm/feedbackSent.cfm" method="post" id="FeedbackForm" class="FeedbackForm">
                     <div class="FeedbackTextInputGroup">
-                        <textarea name="text" placeholder="Message"></textarea>
+						<textarea type="text" id="FeedbackMessage" name="FeedbackMessage" placeholder="Message" required></textarea>
+					</div>
+					<div class="FeedbackTextInputGroup">
+						<input type="text" id="FeedbackName" name="FeedbackName" placeholder="Name" required>
+					</div>
+					<div class="FeedbackTextInputGroup">
+						<input type="text" id="FeedbackEmail" name="FeedbackEmail" placeholder="Email Address" minlength="5" maxlength="45" required>
                     </div>
-                    <div class="FeedbackTextInputGroup">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="FeedbackTextInputGroup">
-                        <input type="text" placeholder="Email Address" required>
-                    </div>
-                    <a href="#" id="FeedbackBT" class="FeedbackBT">SEND</a>
-                    <div class="status"></div>
+					<a href="#FeedbackSection" type="submit" id="FeedbackBT" class="FeedbackBT">SEND</a>
                 </form>
             </div>
         </div>
@@ -248,7 +247,7 @@
             <p>&copy;<span id="FooterYear_Sub"></span> DOG&amp;CAT Forever. All rights reserved</p>
         </div>
     </footer>
-</div>
+</div> 
 
 <a href="#Home" id="HomeBT">HOME</a>
 
