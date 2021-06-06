@@ -90,7 +90,7 @@ ul, li {
 .HeaderOffer {
 	min-height: 6rem;
 	text-transform: uppercase;
-	padding: 0 0 24rem 0;
+	padding: 5rem 0 26rem 0;
 	margin-bottom: 0.1rem;
 	color: pink;
 	background: url('../img/header.jpg') no-repeat center top / cover;
@@ -102,9 +102,9 @@ ul, li {
 	letter-spacing: 0.1em;
 }
 .HeaderOffer h1 {
-	font-size: 100px;
+	font-size: 80px;
 	margin-bottom: 1rem;
-	margin-top: -1rem;
+	margin-top: -0.5rem;
 	letter-spacing: 0.01em;
 }
 .HeaderOffer h3 {
@@ -152,6 +152,7 @@ ul, li {
 	height: 38%;
 }
 .PetInfoGroup h4 {
+	color: #747374;
 	margin-top: 1rem;
 }
 .PriceInfoGroup {
@@ -274,7 +275,7 @@ ul, li {
 	background-color: #fff;
 	border: 1px solid #ccc
 }
-.FeedbackTextInputGroup textarea {
+#FeedbackMessage {
 	width: 200px;
 	height: 150px;
 	color: #323232;
@@ -286,12 +287,12 @@ ul, li {
 	font-size: 17px;
 	text-align: center;
 	letter-spacing: 0.1em;
-	padding: 0 17px;
+	padding: 0 17;
 	border: 1px solid grey;
 	width: 200px;
 	transition: all 0.5s ease;
 	border-radius: 4px;
-	margin: 10px;
+	margin: 10px 0 10px 5px;
 	background: #fff;
 	color: #525252;
 }
@@ -353,4 +354,21 @@ footer p {
 	33% {background-color: #fc97a8;}
 	66% {background-color: #ffaaba;}
 	100% {background-color: #fdc0ca	;}
+}
+/*BACK button for .cfm mini pages*/
+.BackBT {
+	display: block;
+	font-size: 1rem;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	padding: 0.1rem 1rem;
+	border: 1px solid #ccc;
+	width: 15rem;
+	transition: all 0.5s ease;
+	border-radius: 0.2rem;
+}
+.BackBT:hover {
+	cursor: pointer;
+	background: pink;
+	color: #fff;
 }
