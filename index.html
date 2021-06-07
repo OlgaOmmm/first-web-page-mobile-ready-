@@ -211,10 +211,27 @@
             <h4>Keep up-to-date with the latest updates</h4>
             <p>Subscribe to our newsletter to get a weekly dose of <span class="ColoredText_Sub">DOG&amp;CAT</span> news, delivered straight to your inbox</p>
         </div>
+		<div id="SubscriptionCaptchaIsValidLabel" class="SubscriptionCaptchaIsValidLabel">
+			<p>Verification passed. Click SUBSCRIBE button</p>
+		</div>
         <form action="cfm/subscribtionSuccessful.cfm" method="post" id="SubscriptionForm" class="SubscriptionForm">
-            <input id="SubscriptionEmail" name="SubscriptionEmail" type="email" placeholder="Enter Email Address" minlength="5" maxlength="45" required>
+            <input type="email" id="SubscriptionEmail" name="SubscriptionEmail"  placeholder="Enter Email Address" minlength="5" maxlength="45" required>
             <a href="#SubscriptionSection" type="submit" id="SubscriptionBT" class="SubscriptionBT">SUBSCRIBE</a>
         </form>
+    </section>
+</div>
+
+<div class="container">
+    <section id="SubscriptionCaptchaSection" class="SubscriptionCaptchaSection">
+		<div class="SubscriptionCaptchaGroup">	
+			<h4>Please go through verification to confirm the action</h4>
+		</div>
+		<div class="SubscriptionCaptchaGroup">	
+			<input type="text" id="CaptchaGenerated" class="CaptchaGenerated"/>
+			<input type="button" id="CaptchaRefreshBT" class="CaptchaRefreshBT" value="Refresh"/>
+			<input type="text" id="CaptchaUserInput" class="CaptchaUserInput" placeholder="Enter CAPTCHA symbols"/>
+			<input type="button" id="CaptchaValidationBT" class="CaptchaValidationBT" value="Check"/>
+		</div>
     </section>
 </div>
 
