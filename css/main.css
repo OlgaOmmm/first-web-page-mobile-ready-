@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 }
@@ -148,7 +147,7 @@ ul, li {
 .PetCatalogSection {
 	height: 39rem;
 }
-.PetCatalog img{
+.PetCatalog img {
 	height: 38%;
 }
 .PetInfoGroup h4 {
@@ -189,23 +188,21 @@ ul, li {
 	line-height: 1.92em;
 }
 /*Gallery_Section: ____________________________________*/
-.GallerySection figure {
-	display: flex;
-	justify-content: center;
+.GalleryGroup {
+	margin: 0;
+	padding: 0;
 }
-.GalleryGroup .block {
-	padding: 0 0;
-	display: flex;
-	justify-content: space-around;
+.GalleryGroup img {
+	padding: 0;
 	cursor: pointer;
-	height: 90px;
+	height: 200px;
 }
 /*Subscription_Section: ____________________________________*/
 .SubscriptionSection {
 	background-color: #acacac;
 	padding: 0.5rem;
 }
-.SubscriptionGroup p, h4{
+.SubscriptionGroup p, h4 {
 	color: #ffffff;
 	text-align: center;
 }
@@ -245,7 +242,7 @@ ul, li {
 	display: none;
 	justify-content: center;
 }
-.SubscriptionCaptchaIsValidLabel p{
+.SubscriptionCaptchaIsValidLabel p {
 	letter-spacing: 0.1em;
 	font-size: 15px;
 	color: pink;
