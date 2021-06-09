@@ -119,13 +119,11 @@ dampc.subscriptionBT.addEventListener('click', function(event) {
 		if(dampc.isValidCaptcha() === true){	
 			dampc.subscriptionCaptchaIsValidLabel.style.display = 'none'
 			dampc.subscriptionForm.submit()
-		}
-		else {
+		} else {
 			dampc.generateCaptcha()
 			dampc.subscriptionCaptchaSection.style.display = 'block'
 		}
-	} 
-	else {
+	} else {
 		dampc.setInvalidInput(dampc.subscriptionInputEmail)
 		dampc.subscriptionInputEmail.value = ''
 		dampc.subscriptionInputEmail.placeholder = 'Invalid email'
@@ -181,6 +179,3 @@ dampc.feedbackInputEmail.title = 'Please input your email'
 dampc.feedbackTextarea.addEventListener('click',  function(event) {dampc.changeColorInputOnClick (dampc.feedbackTextarea)})
 dampc.feedbackInputName.addEventListener('click',  function(event) {dampc.changeColorInputOnClick (dampc.feedbackInputName)})
 dampc.feedbackInputEmail.addEventListener('click',  function(event) {dampc.changeColorInputOnClick (dampc.feedbackInputEmail)})
-
-//-----------------footer: dynamic year-----------------
-document.getElementById('FooterYear_Sub').innerHTML = new Date().getFullYear()
